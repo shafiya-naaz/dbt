@@ -1,13 +1,13 @@
 
 
-  create  table
-    "basic-profile".basic_profile."userprofile__dbt_tmp"
-    
-    
-      compound sortkey(_airbyte_emitted_at)
-    
-  as (
-    
+create  table
+"basic-profile".basic_profile."userprofile__dbt_tmp"
+
+
+    compound sortkey(_airbyte_emitted_at)
+
+as (
+
 with __dbt__cte__userprofile_ab1 as (
 
 -- SQL model to parse JSON blob stored in a single column and extract into separated field columns as described by the JSON Schema
