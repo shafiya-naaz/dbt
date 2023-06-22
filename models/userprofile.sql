@@ -1,10 +1,6 @@
 
 
-create  table
-"basic-profile".basic_profile."userprofile__dbt_tmp"
-
-
-    compound sortkey(_airbyte_emitted_at)
+create  table "basic-profile".basic_profile."userprofile__dbt_tmp" compound sortkey(_airbyte_emitted_at)
 
 as (
 
