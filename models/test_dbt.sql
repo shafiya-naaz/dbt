@@ -1,6 +1,6 @@
 
 
-create  table "userProfileFinal" compound sortkey(_airbyte_emitted_at)
+create table "basic-profile".basic_profile."userProfileFinal" compound sortkey(_airbyte_emitted_at)
 
 as (
 
@@ -23,5 +23,5 @@ select
         _airbyte_ab_id,
     	_airbyte_emitted_at,
     	getdate() as _airbyte_normalized_at
-from "_airbyte_raw_userprofile"
+from "basic-profile".basic_profile."_airbyte_raw_userprofile"
   );
