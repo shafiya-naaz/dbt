@@ -1,6 +1,6 @@
 
 
-create table basic_profile."userProfileFinal" compound sortkey(_airbyte_emitted_at)
+create table "userProfileFinal" compound sortkey(_airbyte_emitted_at)
 
 as (
 
