@@ -6,4 +6,4 @@ with parsed_data as (
 extracted_data as (
 	select json_extract_path_text(new_data, 'profileList', true) as profiles from parsed_data
 )
-select * from extracted_data;
+select * from extracted_data
